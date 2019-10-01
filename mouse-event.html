@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột</title>
+</head>
+<body>
+<form>
+<img src="ball.jpg" id="ball" style="position: relative; left: 0;top: 0" width="175" height="175">
+</form>
+<input type="button" value="Up" onclick="upKick()">
+<input type="button" value="Down" onclick="downKick()">
+<input type="button" value="Left" onclick="leftKick()">
+<input type="button" value="Right" onclick="rightKick()">
+
+<script>
+    function upKick() {
+        let img = document.getElementById("ball");
+        img.style.top = parseInt(img.style.top) - 5 + "px";
+    }
+    function downKick() {
+        let img = document.getElementById("ball");
+        img.style.top = parseInt(img.style.top) + 5 + "px";
+    }
+    function leftKick() {
+        let img = document.getElementById("ball");
+        img.style.left = parseInt(img.style.left) - 5 + "px";
+    }
+    function rightKick() {
+        let img = document.getElementById("ball");
+        img.style.left = parseInt(img.style.left) + 5 + "px";
+    }
+</script>
+</body>
+</html>
